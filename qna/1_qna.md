@@ -67,9 +67,10 @@ The relevance of the responses is the most important part of your QnA service. T
 
     ![Knowledge Base](./resources/qnapairs.png)
 
+
 1. Click the **Test** button to begin training your knowledge base by chatting with a bot.
 
-    ![Test Bot](./resources/testbotstart.png){:height="172px" width="80px"}
+    ![Test Bot](./resources/testbotstart.png)
 
 
 1. Start training the knowledge base by asking the following question. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the right.:
@@ -80,13 +81,19 @@ The relevance of the responses is the most important part of your QnA service. T
 
     ![Credit Report](./resources/testbot-creditreport.png)
 
+
+
 1. Click the **Save and retrain** button at the top of the page to reflect any changes/inputs you have provided.
 
     ![Save and Retrain](./resources/kbsaveretrain.png)
 
+
+
 1. Click the **Test** button one more time to evaluate your knowledge updated.
 
     ![Evaluate Bot](./resources/testbot-improved.png)
+
+
 
 ### Publish and Validate the Knowledge Base
 
