@@ -30,11 +30,11 @@ Creating your knowledge base is as simple as pointing the QnA Maker tool to the 
 
     ![Top navigation](./resources/mykbservice.png)
 
-1. Step 1. Create a QnA service in Microsoft Azure. Click the **Craeate a QnA service** button. Then follow the instruction for creating QnA Maker resources. website: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure>.
+1. **Step 1.** Create a QnA service in Microsoft Azure. Click the **Craeate a QnA service** button. Then follow the instruction for creating QnA Maker resources. website: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure>.
 
     ![Step1](./resources/mykbservice-step1.png)
 
-1. Step 2. Connect your QnA service to your Knowledge Base. Fill out the form by using your information that you've created in Step 1.
+1. **Step 2.** Click **Refresh** button and connect your QnA service to your Knowledge Base. Fill out the form by using your information that you've created in Step 1.
 
     - **Microsoft Azure Directory ID**:
 
@@ -46,15 +46,15 @@ Creating your knowledge base is as simple as pointing the QnA Maker tool to the 
 
     ![Step2](./resources/mykbservice-step2.png)
 
-1. Step 3. Fill out the name for your Knowlege Base
+1. **Step 3.** Fill out the name for your Knowlege Base
 
     ![Step3](./resources/mykbservice-step3.png)
 
-1. Step 4. Copy and Paste the FAQs web site URL that you found in previous step
+1. **Step 4.** Copy and Paste the FAQs web site URL that you found in previous step and click **+ Add URL**
 
     ![Step4](./resources/mykbservice-step4.png)
 
-1. Click the **Create your KB** button to parse the contents and create a new knowledge base.
+1. **Step 5.** Click the **Create your KB** button to parse the contents and create a new knowledge base.
 
     ![Step5](./resources/mykbservice-step5.png)
 
@@ -72,33 +72,21 @@ The relevance of the responses is the most important part of your QnA service. T
     ![Test Bot](./resources/testbotstart.png)
 
 
-1. Start training the knowledge base by asking the following question. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the left.:
+1. Start training the knowledge base by asking the following question. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the right.:
 
     ```
-    Can I get a copy of my credit report?
+    How much cost is the CarePAK PLUS for using my benefits?
     ```
 
     ![Credit Report](./resources/testbot-creditreport.png)
 
-1. Ask the question below to continue training the knowledge base. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the left.
-
-    ```
-    My credit card was stolen, can you lock it?
-    ```
-
-    ![Stolen Card](./resources/testbot-stolencard.png)
-
-1. Ask the question below to continue training the knowledge base. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the left.
-
-    ```
-    What is the interest rate for my account?
-    ```
-
-    ![Interest Rate](./resources/testbot-interestrate.png)
-
 1. Click the **Save and retrain** button at the top of the page to reflect any changes/inputs you have provided.
 
     ![Save and Retrain](./resources/kbsaveretrain.png)
+
+1. Click the **Test** button one more time to evaluate your knowledge updated.
+
+    ![Evaluate Bot](./resources/testbot-improved.png)
 
 ### Publish and Validate the Knowledge Base
 
