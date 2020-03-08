@@ -16,17 +16,17 @@ With optimized machine learning logic and the ability to integrate industry-lead
 
 Creating your knowledge base is as simple as pointing the QnA Maker tool to the existing content. The tool then extracts questions and answers.
 
-1. In your browser, navigate to the **Capital One** *Credit Card Frequently Asked Questions* website: <https://www.capitalone.com/credit-cards/faq/>.
+1. In your browser, navigate to the **anon USA, Inc. | FAQs** *CarePAK PLUS service plan Frequently Asked Questions* website: <https://www.usa.canon.com/internet/portal/us/home/explore/protection/faqs>.
 
 1. Review the current FAQ questions.
 
-1. Download the following PDF file that contains the same questions: [faq.pdf](./assets/faq-capitalone_credit.pdf).
+1. Keep this web site for copying the URL later.
 
-1. In your browser, navigate to the **QNA Maker** website: <https://qnamaker.ai/>.
+1. In another tab on your browser, navigate to the **QNA Maker** website: <https://qnamaker.ai/>.
 
 1. Click the **Get Started** button. You may be prompted to login using your Azure credentials.
 
-1. Once logged in, select the **Create new service** option.
+1. Once logged in, select the **Create a knowledge base** option.
 
     ![Top navigation](./resources/mykbservice.png)
 
