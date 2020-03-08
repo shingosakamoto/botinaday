@@ -82,7 +82,7 @@ The relevance of the responses is the most important part of your QnA service. T
     ![Credit Report](./resources/testbot-creditreport.png)
 
 
-
+.
 1. Click the **Save and retrain** button at the top of the page to reflect any changes/inputs you have provided.
 
     ![Save and Retrain](./resources/kbsaveretrain.png)
