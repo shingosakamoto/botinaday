@@ -16,7 +16,7 @@ With optimized machine learning logic and the ability to integrate industry-lead
 
 Creating your knowledge base is as simple as pointing the QnA Maker tool to the existing content. The tool then extracts questions and answers.
 
-1. In your browser, navigate to the **anon USA, Inc. | FAQs** *CarePAK PLUS service plan Frequently Asked Questions* website: <https://www.usa.canon.com/internet/portal/us/home/explore/protection/faqs>.
+1. In your browser, navigate to the **Canon USA, Inc. | FAQs** *CarePAK PLUS service plan Frequently Asked Questions* website: <https://www.usa.canon.com/internet/portal/us/home/explore/protection/faqs>.
 
 1. Review the current FAQ questions.
 
@@ -30,21 +30,34 @@ Creating your knowledge base is as simple as pointing the QnA Maker tool to the 
 
     ![Top navigation](./resources/mykbservice.png)
 
-2. Fill out the form by using the following values:
+1. Step 1. Create a QnA service in Microsoft Azure. Click the **Craeate a QnA service** button. Then follow the instruction for creating QnA Maker resources. website: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure>.
 
-    - **Service Name**: Give you service a unique name
+    ![Step1](./resources/mykbservice-step1.png)
 
-    - **URL(s)**: Leave this section blank
+1. Step 2. Connect your QnA service to your Knowledge Base. Fill out the form by using your information that you've created in Step 1.
 
-    - **Files**: Upload the PDF file you downloaded earlier in this exercise
+    - **Microsoft Azure Directory ID**:
 
-    - **Starting from Scartch**: Skip this section
+    - **Azure subscription name**:
 
-    ![Page for adding sources](./resources/createkbservice.png)
+    - **Azure QnA service**:
 
-3. Click the **Create** button to upload your PDF file, parse the contents and create a new knowledge base.
+    - **Language**: English
 
-    ![Create button](./resources/createkbservice2.png)
+    ![Step2](./resources/mykbservice-step2.png)
+
+1. Step 3. Fill out the name for your Knowlege Base
+
+    ![Step3](./resources/mykbservice-step3.png)
+
+1. Step 4. Copy and Paste the FAQs web site URL that you found in previous step
+
+    ![Step4](./resources/mykbservice-step4.png)
+
+1. Click the **Create your KB** button to parse the contents and create a new knowledge base.
+
+    ![Step5](./resources/mykbservice-step5.png)
+
 
 ### Train the Knowledge Base
 
