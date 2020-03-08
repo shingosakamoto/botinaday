@@ -82,7 +82,6 @@ The relevance of the responses is the most important part of your QnA service. T
     ![Credit Report](./resources/testbot-creditreport.png)
 
 
-.
 1. Click the **Save and retrain** button at the top of the page to reflect any changes/inputs you have provided.
 
     ![Save and Retrain](./resources/kbsaveretrain.png)
@@ -104,19 +103,15 @@ Once satisfied with the content and relevance of your knowledge base, you can pr
 
     ![Publish](./resources/kbpublish.png)
 
-1. Before the final publish, you can preview the changes that will affect the knowledge base on final publish. Download the diff file to see what changes will be published.
-
-    ![Download Diff](./resources/kbdownloaddiff.png)
-
 1. Once satisfied with the preview, click the **Publish** button.
 
     ![Publish Succeeded](./resources/kbsuccess.png)
 
 1. Record the information displayed in the **Sample HTTP request** section. This information will be used to validate your service.
 
-1. In your browser, navigate to **Hurl.it**: <https://www.hurl.it/> (the website does not seem to work anymore), or **ExtendsClass.com**: <https://extendsclass.com/rest-client-online.html>.
+1. In your browser, navigate to **Quickstart: Get an answer from knowledge base**: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/get-answer-from-knowledge-base-using-url-tool?pivots=url-test-tool-postman>. Then use cURL or Postman to validate your QnA service.
 
-    ![Hurl.it](./resources/hurlit.png)
+    ![Postman](./resources/hurlit.png)
 
 1. Select the **POST** HTTP Method in the form to update the form with relevant options.
 
@@ -128,32 +123,30 @@ Once satisfied with the content and relevance of your knowledge base, you can pr
 
 1. Fill out the HTTP request form by using the following values:
     
-    - **URL**: concatenate the relative URL and the Host from your **Sample HTTP Request**. For example, if the relative URL is ``/knowledgebases/ad8107f8-e9ab-44c0-920c-d8faf388c29d/generateAnswer`` and the Host is ``https://westus.api.cognitive.microsoft.com/qnamaker/v2.0``, the concatenated URL is ``https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/ad8107f8-e9ab-44c0-920c-d8faf388c29d/generateAnswer``
+    - **URL**: concatenate the relative URL and the Host from your **POST**. For example, if the relative URL is ``/knowledgebases/355cd7f4-0e38-4fcd-b732-e3425b14cff2/generateAnswer`` and the Host is ``https://myqnamakerservice0308.azurewebsites.net/qnamaker``, the concatenated URL is ``https://myqnamakerservice0308.azurewebsites.net/qnamaker/knowledgebases/355cd7f4-0e38-4fcd-b732-e3425b14cff2/generateAnswer``
 
     - **Header Name**: ``Ocp-Apim-Subscription-Key``
 
     - **Header Value**: Use the subscription key value from your **Sample HTTP Request**.
 
-    - **Body Parameter**: ``{ "question": "Is there a fee to use my card overseas?" }``
+    - **Body Parameter**: ``{ "question": "Is there conditions or limitations on the promotional CarePAK PLUS?" }``
 
-    ![Hurl.it Filled](./resources/hurlit-filled.png)
-
-1. Complete the **reCAPTCHA** to verify that you are a real human and then click the **Launch Request** button.
+    ![Postman Filled](./resources/postman-filled.png)
 
 1. Once the request has completed, you should see a status code of **200 OK** and a JSON response body.
 
-    ![Hurl.it Completed](./resources/hurlit-completed.png)
+    ![Postman Completed](./resources/postman-completed.png)
 
     ```
     {
     "answers": [
         {
-        "answer": "Capital One does not charge a fee for using your credit card for foreign currency transactions. Foreign  purchases will be converted at the foreign exchange rate in effect at the time of processing the charge.  Read more about foreign transaction and currency conversion fees.",
-        "questions": [
-            "Will Capital One charge me a fee if I use my credit card overseas?"
-        ],
-        "score": 79.668956726789474
-        }
+            "questions": [
+                "Are there conditions or limitations on the promotional CarePAK PLUS?"
+            ],
+            "answer": "The only requirements are that the product be purchased during the promotion dates, be registered within 30 days, be included on the list of covered models, and be purchased from an authorized Canon USA dealer of from the Canon USA Website. Standard CarePAK PLUS limitations are still applicable including: Abuse, misuse, and fraud are not covered. For more detail, please refer to \"What is Not Covered (General Exclusions)\" in the Terms and Conditions.",
+            "score": 98.0,    
+		}
     ]
     }
     ```
