@@ -69,7 +69,7 @@ The relevance of the responses is the most important part of your QnA service. T
 
 1. Click the **Test** button to begin training your knowledge base by chatting with a bot.
 
-    ![Test Bot](./resources/testbotstart.png)
+    ![Test Bot](./resources/testbotstart.png){:height="1727px" width="802px"}
 
 
 1. Start training the knowledge base by asking the following question. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the right.:
