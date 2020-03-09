@@ -1,6 +1,6 @@
-# 1_Luis
+# 2. Create your first LUIS app
 
-Estimated Time: 20-30 minutes
+Estimated Time: 40-60 minutes
 
 ## What LUIS is
 
@@ -20,7 +20,7 @@ Once we've thought out our app, we are ready to [build and train it](https://doc
 
 Take some time to review the links referenced to above.
 
-### Lab 1.1: Creating the LUIS service in the portal (optional)
+### 1. Creating the LUIS service in the portal (optional)
 
 > Note: Creating a LUIS service in the portal is optional, as LUIS provides you with a "starter key" that you can use for the labs. However, if you want to see how to create a free or paid service in the portal, you can follow the steps below.  
 
