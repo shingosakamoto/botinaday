@@ -109,18 +109,6 @@ Once satisfied with the content and relevance of your knowledge base, you can pr
 
 1. Record the information displayed in the **Sample HTTP request** section. This information will be used to validate your service.
 
-1. In your browser, navigate to **Quickstart: Get an answer from knowledge base**: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/quickstarts/get-answer-from-knowledge-base-using-url-tool?pivots=url-test-tool-postman>. Then use cURL or Postman to validate your QnA service.
-
-    ![Postman](./resources/hurlit.png)
-
-1. Select the **POST** HTTP Method in the form to update the form with relevant options.
-
-    ![Hurl.it POST](./resources/hurlit-post.png)
-
-1. Click the **Add Header(s)** and **Add Body** links to expand the **Headers** and **Parameters** sections.
-
-    ![Hurl.it POST](./resources/hurlit-expanded.png)
-
 1. Fill out the HTTP request form by using the following values:
     
     - **URL**: concatenate the relative URL and the Host from your **POST**. For example, if the relative URL is ``/knowledgebases/355cd7f4-0e38-4fcd-b732-e3425b14cff2/generateAnswer`` and the Host is ``https://myqnamakerservice0308.azurewebsites.net/qnamaker``, the concatenated URL is ``https://myqnamakerservice0308.azurewebsites.net/qnamaker/knowledgebases/355cd7f4-0e38-4fcd-b732-e3425b14cff2/generateAnswer``
