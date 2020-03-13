@@ -9,7 +9,7 @@ At the end of the session participants will have a good sense of Microsoft offer
 
 |Topic|Activity|Timing|
 |-|-|-|
-|Introduction|Azure Bot Services overview|60 min|
+|Introduction|[Azure Bot Services overview](https://github.com/shingosakamoto/botinaday/blob/master/BOT%20Framework%20-%20Shingo.pdf)|60 min|
 |Lunch Break|||
 |Hands-On Session #1|[1. Create a Bot with the Azure Bot Service](https://github.com/shingosakamoto/botinaday/tree/master/bot)|60min|
 |Hands-On Session #2|[2. Create your first LUIS app](https://github.com/shingosakamoto/botinaday/tree/master/luis)|60min|
