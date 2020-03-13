@@ -1,10 +1,8 @@
----
-layout: page
-title: QNA Maker
-permalink: qna.html
----
+# 4. Knowledge Mining Accelerator
 
-## Create your first QNA Maker Knowledge Base
+Estimated Time: 60-90 minutes
+
+## Overview
 
 One of the basic requirements in writing your own Bot service is to seed it with questions and answers. In many cases, the questions and answers already exist in content like FAQ URLs/documents, etc.
 
@@ -18,23 +16,23 @@ Creating your knowledge base is as simple as pointing the QnA Maker tool to the 
 
 1. In your browser, navigate to the **Canon USA, Inc. | FAQs** *CarePAK PLUS service plan Frequently Asked Questions* website: <https://www.usa.canon.com/internet/portal/us/home/explore/protection/faqs>.
 
-1. Review the current FAQ questions.
+2. Review the current FAQ questions.
 
-1. Keep this web site for copying the URL later.
+3. Keep this web site for copying the URL later.
 
-1. In another tab on your browser, navigate to the **QNA Maker** website: <https://qnamaker.ai/>.
+4. In another tab on your browser, navigate to the **QNA Maker** website: <https://qnamaker.ai/>.
 
-1. Click the **Get Started** button. You may be prompted to login using your Azure credentials.
+5. Click the **Get Started** button. You may be prompted to login using your Azure credentials.
 
-1. Once logged in, select the **Create a knowledge base** option.
+6. Once logged in, select the **Create a knowledge base** option.
 
     ![Top navigation](./resources/mykbservice.png)
 
-1. **Step 1.** Create a QnA service in Microsoft Azure. Click the **Craeate a QnA service** button. Then follow the instruction for creating QnA Maker resources. website: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure>.
+7. **Step 1.** Create a QnA service in Microsoft Azure. Click the **Craeate a QnA service** button. Then follow the instruction for creating QnA Maker resources. website: <https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/set-up-qnamaker-service-azure>.
 
     ![Step1](./resources/mykbservice-step1.png)
 
-1. **Step 2.** Click **Refresh** button and connect your QnA service to your Knowledge Base. Fill out the form by using your information that you've created in Step 1.
+8. **Step 2.** Click **Refresh** button and connect your QnA service to your Knowledge Base. Fill out the form by using your information that you've created in Step 1.
 
     - **Microsoft Azure Directory ID**:
 
@@ -46,15 +44,15 @@ Creating your knowledge base is as simple as pointing the QnA Maker tool to the 
 
     ![Step2](./resources/mykbservice-step2.png)
 
-1. **Step 3.** Fill out the name for your Knowlege Base
+9. **Step 3.** Fill out the name for your Knowlege Base
 
     ![Step3](./resources/mykbservice-step3.png)
 
-1. **Step 4.** Copy and Paste the FAQs web site URL that you found in previous step and click **+ Add URL**
+10. **Step 4.** Copy and Paste the FAQs web site URL that you found in previous step and click **+ Add URL**
 
     ![Step4](./resources/mykbservice-step4.png)
 
-1. **Step 5.** Click the **Create your KB** button to parse the contents and create a new knowledge base.
+11. **Step 5.** Click the **Create your KB** button to parse the contents and create a new knowledge base.
 
     ![Step5](./resources/mykbservice-step5.png)
 
@@ -68,12 +66,12 @@ The relevance of the responses is the most important part of your QnA service. T
     ![Knowledge Base](./resources/qnapairs.png)
 
 
-1. Click the **Test** button to begin training your knowledge base by chatting with a bot.
+2. Click the **Test** button to begin training your knowledge base by chatting with a bot.
 
     ![Test Bot](./resources/testbotstart.png)
 
 
-1. Start training the knowledge base by asking the following question. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the right.:
+3. Start training the knowledge base by asking the following question. If the Bot provides an invalid answer, select the apporpriate answer from the alternatives on the right.:
 
     ```
     How much cost is the CarePAK PLUS for using my benefits?
@@ -82,13 +80,13 @@ The relevance of the responses is the most important part of your QnA service. T
     ![Credit Report](./resources/testbot-creditreport.png)
 
 
-1. Click the **Save and retrain** button at the top of the page to reflect any changes/inputs you have provided.
+4. Click the **Save and retrain** button at the top of the page to reflect any changes/inputs you have provided.
 
     ![Save and Retrain](./resources/kbsaveretrain.png)
 
 
 
-1. Click the **Test** button one more time to evaluate your knowledge updated.
+5. Click the **Test** button one more time to evaluate your knowledge updated.
 
     ![Evaluate Bot](./resources/testbot-improved.png)
 
@@ -103,13 +101,13 @@ Once satisfied with the content and relevance of your knowledge base, you can pr
 
     ![Publish](./resources/kbpublish.png)
 
-1. Once satisfied with the preview, click the **Publish** button.
+2. Once satisfied with the preview, click the **Publish** button.
 
     ![Publish Succeeded](./resources/kbsuccess.png)
 
-1. Record the information displayed in the **Sample HTTP request** section. This information will be used to validate your service.
+3. Record the information displayed in the **Sample HTTP request** section. This information will be used to validate your service.
 
-1. Fill out the HTTP request form by using the following values:
+4. Fill out the HTTP request form by using the following values:
     
     - **URL**: concatenate the relative URL and the Host from your **POST**. For example, if the relative URL is ``/knowledgebases/355cd7f4-0e38-4fcd-b732-e3425b14cff2/generateAnswer`` and the Host is ``https://myqnamakerservice0308.azurewebsites.net/qnamaker``, the concatenated URL is ``https://myqnamakerservice0308.azurewebsites.net/qnamaker/knowledgebases/355cd7f4-0e38-4fcd-b732-e3425b14cff2/generateAnswer``
 
@@ -121,7 +119,7 @@ Once satisfied with the content and relevance of your knowledge base, you can pr
 
     ![Postman Filled](./resources/postman-filled.png)
 
-1. Once the request has completed, you should see a status code of **200 OK** and a JSON response body.
+5. Once the request has completed, you should see a status code of **200 OK** and a JSON response body.
 
     ![Postman Completed](./resources/postman-completed.png)
 
@@ -139,4 +137,4 @@ Once satisfied with the content and relevance of your knowledge base, you can pr
     }
     ```
 
-> **Up Next**: [Automated ARM Deployment](arm.html)
+> **Up Next**: [4. Azure Bot Framework Composer](../composer/readme.md)

@@ -76,4 +76,4 @@ You should see that the bot responds to each message you send by echoing back yo
   |:-:|
 
 
-> **Up Next**: [2. Create your first LUIS app](../luis/1_luis.md)
+> **Up Next**: [2. Create your first LUIS app](../luis/readme.md)
