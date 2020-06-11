@@ -14,5 +14,5 @@ At the end of the session participants will have a good sense of Microsoft offer
 |Hands-On Session #1|[1. Create a Bot with the Azure Bot Service](https://github.com/shingosakamoto/botinaday/tree/master/bot)|60min|
 |Hands-On Session #2|[2. Create your first LUIS app](https://github.com/shingosakamoto/botinaday/tree/master/luis)|60min|
 |Hands-On Session #3|[3. Create your first QNA Maker Knowledge Base](https://github.com/shingosakamoto/botinaday/tree/master/qna)|60min|
-|Hands-On Session #4|[4. Try Knowledge Mining Accelerator](https://github.com/Azure/AIPlatform/tree/master/end-to-end-solutions/kma)|60min|
+|Hands-On Session #4|[4. Try Knowledge Mining Accelerator](https://github.com/Azure/AIPlatform/tree/master/end-to-end-solutions/kma)|120min|
 |Hands-On Session #5|[5. Microsoft Bot Framework Composer](https://github.com/shingosakamoto/botinaday/tree/master/composer)|60min|
